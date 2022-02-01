@@ -1,4 +1,4 @@
-# Assignment-1
+# Assignment-2
 
 **Team Members**
 |   Enrollment No.  |   Name   | GitHub Id |
@@ -16,11 +16,11 @@
 
 ---
 ## Problem Statement
-Write a C program to left rotate and right rotate an array.
+Write a C program to find difference between decimal numbers by using structures to a function.
 
 ---
 ## How to use code
-Here, we have mentioned the simplified steps to download and run our code of the rotation algorithm in a local terminal, using Git Bash.
+Here we have mentioned the simplified steps to download and run our code in a local terminal, using Git Bash.
 
 #Download project
 ```
@@ -29,78 +29,84 @@ git clone https://github.com/Tan-Code-may/ITP-2022.git
 Project Initialize 
 ```
 cd Desktop
-cd Ass1
+cd Ass2
 ```
 ---
 
 Run the code
 ```
-Ass_1(ITP).cpp
+ass_2_1_15.c
+ass_2_2_15.c
 ```
 Output
 ```
-An array that has been right rotated or left rotated a certain number of times.
+Absolute difference between two decimal numbers as many number of times as the user wants.
 ```
 ---
 
 **Test case**
 
-Rotation of Array
+Difference of numbers
 ```
-Test Case-1
+Test Case-1 (ass_2_1_15.c)
+
 Input:
-Enter size of the array:6
+Enter two decimal numbers (upto 4 decimal places)-
+23.1598 21.4895
 
-Enter elements of the array-
-9 4 8 0 2 1
+Do you want more (Y/N): y
+Enter two decimal numbers (upto 4 decimal places)-
+1596.4798 23985.1489
 
-Enter number of times the array need to be rotated:3
+Do you want more (Y/N): d
 
-Enter 'r/R' to right rotate the array.
-Enter 'l/L' to left rotate the array.
-l
+Do you want more (Y/N): N
+
 
 Output:
-0       2       1       9       4       8
-
-
+Difference=1.6703
+Difference=22388.6680
+Wrong input
+Finish.
 #--------------------------#
 
 
-Test Case-2
+Test Case-2 (ass_2_2_15.c)
+
 Input:
-Enter size of the array:6
+Enter number of times the difference has to be carried out: 2
 
-Enter elements of the array-
-9 4 8 0 2 1
+Enter two decimal numbers (upto 4 decimal places)-
+1234.5986 2356.7848 
 
-Enter number of times the array need to be rotated:4
-
-Enter 'r/R' to right rotate the array.
-Enter 'l/L' to left rotate the array.
-r
+Enter two decimal numbers (upto 4 decimal places)-
+325987.2598 1254.4785
 
 Output:
-8       0       2       1       9       4
+Difference= 1122.1863
+Difference= 324732.7813
+
 ```
 
 ---
 
 ### Theory
-To rotate an array ar[] of size 'x', either leftwards or rightwards for 'n' times, we have used the concept of loops and functions. To begin with, we take the input from the user. Our algorithm constitutes a nested loop. The first loop ensures the rotation is carried out as many no. of times as the user wishes to and the second 'nested loop' carries out the process of array rotation by assigning the values to consecutive elements, depending upon the type of rotation. Further, we have applied the algorithm using two methods, namely, the standard method and the functions method. 
+To rightfully obtain the difference between two decimal numbers for a stipulated number of times, we have used the concept of structures, arrays, and functions. To begin with, we take the required inputs from the user. The further program can be expressed by two approaches, the first one includes the usage of ‘structures’ and ‘functions’, and the second one is an amalgamation of ‘structures with arrays’ and ‘functions’. Either approach would give us the difference between a set of two decimal numbers for a certain number of times, based on the user input. The only difference is that the first program asks the user every time whether they want to run it again or not. On the other hand, the second program initially asks the user about the number of times the difference needs to be obtained, so that the user need not tell the system again and again to get the difference of various sets of two decimal numbers. Also, the output has been curated not to give the difference of the numbers as positive or negative values, rather to give out the absolute values. 
 
 ### Analysis
 
-**Running time of the algorithm**
+**Time complexity**
 
-We have recorded the time that a system takes to execute the rotation algorithm for different number of array elements and different number of rotations. The data has been recorded in our report as well as our presentation.
+Our first program does not involves any loop or recursive statements, hence, time complexity for the standard method is O(1).
+
+Our second program contains a single looping statement, namely, ‘for’ loop, hence, its time complexity will be O(n).
 
 ---
 
 ### References
 
- https://www.tutorialspoint.com/c-program-for-program-for-array-rotation
+ https://fresh2refresh.com/c-programming/c-passing-struct-to-function/
  
- https://www.javatpoint.com/c-program-to-right-rotate-the-elements-of-an-array
-
-https://www.codechef.com/ide.
+ https://www.geeksforgeeks.org/analysis-of-algorithms-set-4-analysis-of-loops/
+ 
+ 
